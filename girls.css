@@ -1,0 +1,589 @@
+/* Body elements fade in */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+body {
+    height: 100vh;
+    font-family: "Brandon Text", Arial, sans-serif;
+}
+
+/* Navigation*/
+
+header p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+header p a {
+    color: white;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    background-color: white;
+    /* line-height: 0px; */
+    overflow: hidden;
+    font-size: 2.5vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:after {
+    content: "";
+    position: absolute;
+    background-color: olive;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    padding: 25px;
+    border-bottom: 1px solid #c2cbcd;
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+}
+
+#home {
+    padding: 10px;
+}
+
+#women {
+    padding: 10px;
+}
+
+#men {
+    padding: 10px;
+}
+
+#girls {
+    padding: 10px;
+}
+
+#boys {
+    padding: 10px;
+}
+
+main {
+    background-color: rgba(25, 26, 27, 0.03);
+    height: 100vh;
+}
+
+
+main {
+    margin-left: 450px;
+    /* padding: 50px 20px 50px 0px; */
+    position: relative;
+    z-index: 1;
+}
+
+/* Products */
+
+
+.products {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+}
+
+.products h2 {
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 0em;
+    margin: 0px;
+}
+
+.products a {
+    color: black;
+    text-decoration: none;
+}
+
+.products a:hover {
+    color: orangered;
+}
+
+.products-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.product {
+    float: left;
+    width: 27.45%;
+    padding: 5px;
+    /* padding: 5px 5px 5px 27px; */
+    height: auto;
+}
+
+.product button {
+    margin-top: 20px;
+}
+
+
+#size-filter-product-page-anchor {
+    width: auto;
+}
+
+.s3ej8 {
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #647175;
+    width: 100%;
+    padding: 12px 15px;
+    outline: 0;
+}
+
+.diMZs {
+    padding: 16px !important;
+}
+
+.bDKFr {
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #838d91;
+    width: 100%;
+    padding: 12px 16px;
+    outline: 0;
+}
+
+.qegh1 {
+    margin-left: auto;
+}
+
+/* Size Dropdown Menu */
+
+.size-menu {
+    border: 1px solid #838d91;
+    list-style: none;
+    position: relative;
+    margin-top: 10px;
+    /* Ensure the parent div is positioned relative */
+}
+
+.size-menu span {
+    color: #34495e;
+    text-decoration: none;
+}
+
+.dropdown {
+    border: 1px solid #838d91;
+    display: none;
+    /* Initially hide the dropdown */
+    position: absolute;
+    top: 100%;
+    /* Position the dropdown below the parent */
+    left: 0;
+    width: 100%;
+    /* Make the dropdown full width */
+    background-color: white;
+    /* Add a background color */
+    z-index: 999;
+    /* Ensure the dropdown appears above other content */
+}
+
+.size-menu:hover .dropdown {
+    display: block;
+    /* Show the dropdown when the parent is hovered */
+}
+
+.dropdown li {
+    display: block;
+    padding: 5px;
+    /* Add padding for better spacing */
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    background-color: #f0f0f0;
+    /* Change background color on hover */
+}
+
+
+/* Button */
+
+
+.WWHwe {
+    margin-bottom: 12px;
+}
+
+user agent stylesheet div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.WZ7iD,
+.WZ7iD a,
+.WZ7iD button {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Brandon Text, Arial, sans-serif;
+}
+
+.ggwqD {
+    color: #191a1b;
+    box-sizing: border-box;
+    max-width: 1600px;
+    margin: 0px auto;
+    min-height: 100vh;
+    padding: 0px 16px;
+    overflow: hidden;
+}
+
+
+.qiTXg.cS91h {
+    border-radius: 4px;
+}
+
+.qiTXg.OaJef {
+    height: 56px;
+}
+
+.qiTXg.OICoT {
+    background-color: #157e64;
+    border-color: #157e64;
+}
+
+.I_0O9.btBnB {
+    /* background: #191a1b none;
+    border-color: #191a1b; */
+    color: #fff;
+    font-weight: 400;
+}
+
+.WZ7iD,
+.WZ7iD a,
+.WZ7iD button {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Brandon Text, Arial, sans-serif;
+}
+
+a.DGAJW,
+button.DGAJW {
+    height: 50px;
+}
+
+.qiTXg {
+    padding: 0 !important;
+    letter-spacing: 0.5px;
+    line-height: 1.38 !important;
+}
+
+@media only screen and (min-width: 736.1px) {
+    .I_0O9 {
+        font-size: 0.8125rem;
+        height: 40px;
+    }
+}
+
+.E9j5R {
+    display: flex;
+    width: 100%;
+}
+
+.I_0O9 {
+    border: 1px solid;
+    border-radius: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    padding: 0 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: background .2s, border-color .2s;
+}
+
+.qiTXg svg {
+    vertical-align: text-bottom;
+    margin-right: 12px;
+}
+
+
+.brand span {
+    font-family: "Brandon Text", Arial, sans-serif;
+    line-height: 1.75rem;
+    color: #191a1b;
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 0em;
+}
+
+
+.sold {
+    background-color: #f0f3f5;
+    color: #191a1b;
+
+}
+
+.product p {
+    color: #191a1b;
+    font-family: "Brandon Text", Arial, sans-serif;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0em;
+}
+
+.sold h3 {
+    font-family: "Brandon Text", Arial, sans-serif;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0em;
+}
+
+.pp-container span {
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: line-through;
+}
+
+
+/* Footer */
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    z-index: 999; /* Ensure it's above other content */
+}
+
+#info {
+    color: black;
+    padding-top: 10px;
+    margin: 0;
+
+}
+
+#info ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#info li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#info li a:hover {
+    color: silver;
+}
+
+#info li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#info span {
+    color: white;
+    padding-bottom: 0;
+}
+
+small {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    header {
+        margin-left: 0;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .product {
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .sale-container {
+        float: none;
+        margin: 0 auto;
+    }
+
+    footer {
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+/* On larger screens */
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+        font-size: 16px; /* Adjust font size for larger screens */
+    }
+
+    header {
+        margin-left: 0;
+    }
+    
+    nav {
+        margin-bottom: 100px;
+        height: auto;
+    }
+
+    #home {
+        padding: 10px 30px;
+    }
+    
+    #women {
+        padding: 10px 30px;
+    }
+    
+    #men {
+        padding: 10px 30px;
+    }
+    
+    #girls {
+        padding: 10px 30px;
+    }
+    
+    #boys {
+        padding: 10px 30px;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    footer {
+        margin-left: 0px; /* Adjust margin for footer */
+        width: 100%;
+    }
+
+    .on-sale {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sale-container {
+        max-width: 1500px;
+        margin-bottom: 150px;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .product {
+        text-align: center;
+        width: calc(33.3% - 20px); /* Adjust width for product items */
+    }
+}

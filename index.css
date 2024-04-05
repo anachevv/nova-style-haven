@@ -1,0 +1,432 @@
+/* Body elements fade in */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+/* Body */
+
+body {
+    height: 100vh;
+    font-family: "Brandon Text", Arial, sans-serif;
+}
+
+/* Navigation*/
+
+header p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+header p a {
+    color: white;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    background-color: white;
+    /* line-height: 0px; */
+    overflow: hidden;
+    font-size: 2.5vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:after {
+    content: "";
+    position: absolute;
+    background-color: olive;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    padding: 25px;
+    border-bottom: 1px solid #c2cbcd;
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+}
+
+#home {
+    padding: 10px;
+}
+
+#women {
+    padding: 10px;
+}
+
+#men {
+    padding: 10px;
+}
+
+#girls {
+    padding: 10px;
+}
+
+#boys {
+    padding: 10px;
+}
+
+/* Main */
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    /* color: white; */
+    color: #191a1b;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+main {
+    background-color: rgba(25, 26, 27, 0.03);
+    height: 100vh;
+}
+
+
+main {
+    margin-left: 450px;
+    /* padding: 50px 20px 50px 0px; */
+    position: relative;
+    z-index: 1;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+
+
+footer {
+    /* bottom: 0; */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+    margin-left: 250px;
+}
+
+#info {
+    color: black;
+    padding-top: 10px;
+    margin: 0;
+
+}
+
+#info ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#info li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#info li a:hover {
+    color: silver;
+}
+
+#info li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#info span {
+    color: white;
+    padding-bottom: 0;
+}
+
+small {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/* Responsiveness */
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        position: relative;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 10px 0;
+        margin-bottom: 50px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    header {
+        margin-left: 0;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    main {
+        margin: 0;
+        height: auto;
+    }
+
+    .product {
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+
+/* On larger screens */
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+        font-size: 16px; /* Adjust font size for larger screens */
+    }
+
+    header {
+        margin-left: 0;
+    }
+    
+    nav {
+        margin-bottom: 100px;
+        height: auto;
+
+    }
+
+    #home {
+        padding: 10px 30px;
+    }
+    
+    #women {
+        padding: 10px 30px;
+    }
+    
+    #men {
+        padding: 10px 30px;
+    }
+    
+    #girls {
+        padding: 10px 30px;
+    }
+    
+    #boys {
+        padding: 10px 30px;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    footer {
+        margin-left: 0px; /* Adjust margin for footer */
+        width: 100%;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .product {
+        width: calc(33.33% - 20px); /* Adjust width for product items */
+    }
+}

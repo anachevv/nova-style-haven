@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online boutique where you can find everything you need">
+    <link rel="stylesheet" href="./index.css">
+    <title>NovaStyle Haven</title>
+</head>
+
+<body>
+    <header class="fade-in">
+        <p>
+            <strong>Act fast! Save up to 50% on Spring Sale deals</strong>
+        </p>
+
+        <h1>NovaStyle Haven</h1>
+
+        <nav>
+            <ul>
+                <li id="home" class="a"><a href="index.html">Home</a></li>
+                <li id="women" class="a"><a href="women.html">Women</a></li>
+                <li id="men" class="a"><a href="men.html">Men</a></li>
+                <li id="girls" class="a"><a href="girls.html">Girls</a>
+                <li id="boys" class="a"><a href="boys.html">Boys</a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="fade-in">
+        <div class="container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./slides/slide1.jpg" style="width:100%">
+                <div class="text">Save Big on Your Favorite Brands</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./slides/slide2.jpg" style="width:100%">
+                <div class="text">Pick Up Today in Store or Curbside</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./slides/slide3.jpg" style="width:100%">
+                <div class="text">What's New</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </main>
+
+    <footer class="fade-in">
+        <section id="info">
+            <ul>
+                <li>
+                    <a href="about.html">About NovaStyle Haven</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a href="terms.html">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="privacy.html">Privacy Policy</a>
+                </li>
+            </ul>
+            <span><small>&copy; 2024 NovaStyle Haven. All rights reserved.</small></span>
+        </section>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+<div class="product">
+                    <img src="./products/women/shoulder_bags/product1.jpeg" width="50%;" alt="Product 1">
+                    <h2>The J Marc Curve Leather Shoulder Bag</h2>
+                    <p>$386 (43% off)</p>
+                    <button>Add to Cart</button>
+</div>
